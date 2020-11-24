@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 180px;
+            height: 300px;
+            border: 1px solid red;
+            margin: 100px auto;
+            background: url(img/3.png);
+            background-position-X: 0px;
+            animation: aa 0.5s step-end infinite;
+            /*step-end为马上跳到下一帧 infinite为连续不停的播放*/
+        }
+        
+        @keyframes aa {
+            0% {
+                background-position-X: 0px;
+            }
+            14% {
+                background-position-X: -180px;
+            }
+            28% {
+                background-position-X: -360px;
+            }
+            42% {
+                background-position-X: -540px;
+            }
+            56% {
+                background-position-X: -720px;
+            }
+            70% {
+                background-position-X: -900px;
+            }
+            84% {
+                background-position-X: -1080px;
+            }
+            100% {
+                background-position-X: -1260px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
